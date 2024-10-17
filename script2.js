@@ -1,15 +1,15 @@
-const checkSpeed = (speed) => {
-    const speedLimit = 70;
-    const kmPerDemeritPoint = 5;
-    const demeritPointsThreshold = 12;
-
-    if (speed <= speedLimit) {
-        return "Ok"
+const speedLimit = 70;
+function speedDetector(speed) {
+    if (speed < 70) {
+        console.log("OK");
+    } else {
+        const demeritPoints = Math.floor((speed - speedLimit) / 5);
+        console.log(Points `${demeritPoints}`);
+        if (demeritPoints > 12) {
+            console.log("License suspended");
+        }
     }
-    const points = Math.floor((speed-speedLimit) / kmPerDemeritPoint);
-    if (points > demeritPointsThreshold) {
-        result.textContent = "License suspended";
-    }
-    else result.textContent = "Points: ${points}"
- }
- 
+}
+speedDetector(30);
+speedDetector(90);
+speedDetector(140);

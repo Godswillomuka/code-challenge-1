@@ -12,7 +12,7 @@ Installation Requirements
 Git
 
 Installation instruction
-Git clone https://github.com/Godswillomuka/code-challange.git
+Git clone https://github.com/Godswillomuka/code-challenge-1.git
 
 Live Link
 [Git](gh-pages link)
